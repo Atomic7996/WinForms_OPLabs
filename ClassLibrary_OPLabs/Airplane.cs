@@ -7,9 +7,11 @@ namespace ClassLibrary_OPLabs
 {
     public class Airplane
     {
-        private const int airplaneID = 0;
+        public static readonly int? airplaneId;
         public string? boardNumber;
         public string? modelNumber;
         public bool isForPassengers;
+        public const string airportName = "Pulkovo SPB";
+        private string? airplaneName;
     }
 }
