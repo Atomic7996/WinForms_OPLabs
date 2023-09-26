@@ -65,6 +65,7 @@
             LR3ToolStripMenuItem.Name = "LR3ToolStripMenuItem";
             LR3ToolStripMenuItem.Size = new Size(148, 20);
             LR3ToolStripMenuItem.Text = "Лабораторная работа 3";
+            LR3ToolStripMenuItem.Click += LR3ToolStripMenuItem_Click;
             // 
             // LR4ToolStripMenuItem
             // 

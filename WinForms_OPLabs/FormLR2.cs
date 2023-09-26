@@ -19,11 +19,10 @@ namespace WinForms_OPLabs
 
         private void btnShowList_Click(object sender, EventArgs e)
         {
-            Airplane airplane1 = new Airplane(tbBoardNumber.Text, tbModel.Text, cbForPassengers.Checked, "Победа");
+            Airplane airplane1 = new Airplane(tbBoardNumber.Text, tbModel.Text, cbForPassengers.Checked, "Победа", 0, DateOnly.FromDateTime(DateTime.Now));
             Airplane airplane2 = new Airplane("412HH", "F322");
-            FormLR2 formLR2 = this;
 
-            formLR2.BackColor = Airplane.bgColor;
+            this.BackColor = Airplane.bgColor;
 
             rtbList.Clear();
             rtbList.Text += string.Format("Самолет: модель {0}, бортовой номер {1}, для пассажиров - {2}, аэропорт базирования - {3} \n", airplane1.modelNumber, airplane1.boardNumber, airplane1.isForPassengers, Airplane.airportName);
