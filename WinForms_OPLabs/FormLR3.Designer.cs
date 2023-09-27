@@ -63,7 +63,7 @@
             btnShowList.Location = new Point(344, 381);
             btnShowList.Name = "btnShowList";
             btnShowList.Size = new Size(120, 60);
-            btnShowList.TabIndex = 45;
+            btnShowList.TabIndex = 7;
             btnShowList.Text = "Вывод списка самолетов";
             btnShowList.UseVisualStyleBackColor = true;
             btnShowList.Click += btnShowList_Click;
@@ -74,7 +74,7 @@
             btnClear.Location = new Point(12, 378);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(90, 60);
-            btnClear.TabIndex = 44;
+            btnClear.TabIndex = 8;
             btnClear.Text = "Очистить";
             btnClear.UseVisualStyleBackColor = true;
             btnClear.Click += btnClear_Click;
@@ -121,7 +121,7 @@
             rtbList.Location = new Point(344, 113);
             rtbList.Name = "rtbList";
             rtbList.Size = new Size(444, 240);
-            rtbList.TabIndex = 47;
+            rtbList.TabIndex = 9;
             rtbList.Text = "";
             // 
             // cbForPassengers
@@ -131,7 +131,7 @@
             cbForPassengers.Location = new Point(12, 198);
             cbForPassengers.Name = "cbForPassengers";
             cbForPassengers.Size = new Size(243, 25);
-            cbForPassengers.TabIndex = 41;
+            cbForPassengers.TabIndex = 3;
             cbForPassengers.Text = "Для пассажирских перевозок ";
             cbForPassengers.UseVisualStyleBackColor = true;
             // 
@@ -156,7 +156,7 @@
             dtpLastMaintenanceDate.MinDate = new DateTime(1935, 1, 1, 0, 0, 0, 0);
             dtpLastMaintenanceDate.Name = "dtpLastMaintenanceDate";
             dtpLastMaintenanceDate.Size = new Size(150, 29);
-            dtpLastMaintenanceDate.TabIndex = 3;
+            dtpLastMaintenanceDate.TabIndex = 6;
             dtpLastMaintenanceDate.Value = new DateTime(1935, 1, 1, 0, 0, 0, 0);
             // 
             // nudEngineCount
@@ -165,7 +165,7 @@
             nudEngineCount.Location = new Point(173, 280);
             nudEngineCount.Name = "nudEngineCount";
             nudEngineCount.Size = new Size(150, 29);
-            nudEngineCount.TabIndex = 52;
+            nudEngineCount.TabIndex = 5;
             // 
             // tbName
             // 
@@ -173,7 +173,7 @@
             tbName.Location = new Point(173, 238);
             tbName.Name = "tbName";
             tbName.Size = new Size(150, 29);
-            tbName.TabIndex = 54;
+            tbName.TabIndex = 4;
             // 
             // label5
             // 

@@ -8,6 +8,7 @@ namespace ClassLibrary_OPLabs
 {
     public class Airplane
     {
+        // Поля
         public static readonly int airplaneId;
         public string boardNumber;
         public string modelNumber;
@@ -18,17 +19,18 @@ namespace ClassLibrary_OPLabs
 
         private string? airplaneName;
         private int engineCount;
-        public DateOnly lastMaintenanceDate;
+        private DateOnly lastMaintenanceDate;
 
-        public bool IsForPassengers { get => isForPassengers; set => isForPassengers = value; }
-        
+        // Свойства
+        public bool IsForPassengers { get; set; }
+
         public string? AirplaneName
         {
             get
             {
                 return airplaneName;
             }
-            private set 
+            private set
             {
                 if (value.Length != 0 && char.IsLower(value[0]))
                     value = char.ToUpper(value[0]) + value.Substring(1);
@@ -36,11 +38,22 @@ namespace ClassLibrary_OPLabs
                 airplaneName = value;
             }
         }
-        
-        public int EngineCount { get => engineCount; set => engineCount = value; }
-        
+
+        public int EngineCount
+        {
+            get => engineCount;
+            set
+            {
+                if (value < 1)
+                    return;
+                else
+                    engineCount = value;
+            }
+        }
+
         public DateOnly LastMaintenanceDate { get => lastMaintenanceDate; set => lastMaintenanceDate = value; }
 
+        // Конструкторы
         public Airplane() { }
 
         public Airplane(string boardNumber, string modelNumber)
