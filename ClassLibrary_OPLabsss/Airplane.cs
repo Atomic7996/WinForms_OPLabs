@@ -1,6 +1,8 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
 
-namespace ClassLibrary_OPLabs
+namespace ClassLibrary_OPLabsss
 {
     public class Airplane
     {
@@ -13,7 +15,7 @@ namespace ClassLibrary_OPLabs
 
         public static readonly Color bgColor;
 
-        private string? airplaneName;
+        private string airplaneName;
         private int engineCount;
         private DateTime lastMaintenanceDate;
         private string image;
@@ -21,7 +23,7 @@ namespace ClassLibrary_OPLabs
         // Свойства
         public bool IsForPassengers { get; set; }
 
-        public string? AirplaneName
+        public string AirplaneName
         {
             get
             {
@@ -58,11 +60,11 @@ namespace ClassLibrary_OPLabs
 
         public Airplane(string boardNumber, string modelNumber)
         {
-            this.boardNumber = boardNumber;
-            this.modelNumber = modelNumber;
+            this.BoardNumber = boardNumber;
+            this.ModelNumber = modelNumber;
         }
 
-        public Airplane(string boardNumber, string modelNumber, bool isForPassengers, string? airplaneName, int engineCount, DateTime lastMaintenanceDate) : this(boardNumber, modelNumber)
+        public Airplane(string boardNumber, string modelNumber, bool isForPassengers, string airplaneName, int engineCount, DateTime lastMaintenanceDate) : this(boardNumber, modelNumber)
         {
             this.IsForPassengers = isForPassengers;
             this.AirplaneName = airplaneName;
@@ -70,23 +72,29 @@ namespace ClassLibrary_OPLabs
             this.LastMaintenanceDate = lastMaintenanceDate;
         }
 
-        public Airplane(string BoardNumber, string modelNumber, string image)
+        public Airplane(string boardNumber, string modelNumber, string image)
         {
-            this.boardNumber = BoardNumber;
-            this.modelNumber = modelNumber;
+            this.BoardNumber = boardNumber;
+            this.ModelNumber = modelNumber;
             this.image = image;
         }
+
         static Airplane()
         {
             Airplane.bgColor = Color.Azure;
         }
 
         // Методы
+        public void ShowAirplaneImage(PictureBox pictureBox)
+        {
+            Graphics g = Graphics.FromHwnd(pictureBox.Handle);
+            g.DrawImage(System.Drawing.Image.FromFile(this.image), new Rectangle(0, 0, pictureBox.Width, pictureBox.Height));
+        }
 
-        //public void ShowAirplaneImage(PictureBox pictureBox)
-        //{
-        //    Graphics g = Graphics.FromHwnd(pictureBox.Handle);
-        //    g.DrawImage(Image.FromFile(this.image), new Rectangle(0, 0, pictureBox.Width, pictureBox.Height));
-        //}
+        public void ShowAirplaneImage(Form form)
+        {
+            Graphics g = Graphics.FromHwnd(form.Handle);
+            g.DrawImage(System.Drawing.Image.FromFile(this.image), new Rectangle(0, 0, form.Width, form.Height));
+        }
     }
 }

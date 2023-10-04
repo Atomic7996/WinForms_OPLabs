@@ -1,4 +1,4 @@
-using ClassLibrary_OPLabs;
+using ClassLibrary_OPLabsss;
 
 namespace WinForms_OPLabs
 {

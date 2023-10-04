@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms_OPLabs", "WinForms_OPLabs\WinForms_OPLabs.csproj", "{2292971D-AC83-4C44-A4D4-440CDB0253EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForms_OPLabs", "WinForms_OPLabs\WinForms_OPLabs.csproj", "{2292971D-AC83-4C44-A4D4-440CDB0253EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_OPLabs", "ClassLibrary_OPLabs\ClassLibrary_OPLabs.csproj", "{D13836E4-CE20-4497-875A-A4910800CC2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary_OPLabs", "ClassLibrary_OPLabs\ClassLibrary_OPLabs.csproj", "{D13836E4-CE20-4497-875A-A4910800CC2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_OPLabsss", "ClassLibrary_OPLabsss\ClassLibrary_OPLabsss.csproj", "{65FC61F6-913D-4D46-A61C-77A477C51626}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D13836E4-CE20-4497-875A-A4910800CC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D13836E4-CE20-4497-875A-A4910800CC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D13836E4-CE20-4497-875A-A4910800CC2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FC61F6-913D-4D46-A61C-77A477C51626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FC61F6-913D-4D46-A61C-77A477C51626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FC61F6-913D-4D46-A61C-77A477C51626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FC61F6-913D-4D46-A61C-77A477C51626}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿using ClassLibrary_OPLabs;
+﻿using ClassLibrary_OPLabsss;
 
 namespace WinForms_OPLabs
 {
@@ -19,7 +19,7 @@ namespace WinForms_OPLabs
 
         private void btnShowList_Click(object sender, EventArgs e)
         {
-            Airplane airplane1 = new Airplane(tbBoardNumber.Text, tbModel.Text, cbForPassengers.Checked, "Победа", 0, DateOnly.FromDateTime(DateTime.Now));
+            Airplane airplane1 = new Airplane(tbBoardNumber.Text, tbModel.Text, cbForPassengers.Checked, "Победа", 0, DateTime.Now);
             Airplane airplane2 = new Airplane("412HH", "F322");
 
             this.BackColor = Airplane.bgColor;
