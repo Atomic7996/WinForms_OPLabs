@@ -79,6 +79,7 @@
             LR5ToolStripMenuItem.Name = "LR5ToolStripMenuItem";
             LR5ToolStripMenuItem.Size = new Size(148, 20);
             LR5ToolStripMenuItem.Text = "Лабораторная работа 5";
+            LR5ToolStripMenuItem.Click += LR5ToolStripMenuItem_Click;
             // 
             // FormMain
             // 

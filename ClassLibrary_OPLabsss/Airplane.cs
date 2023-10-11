@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ClassLibrary_OPLabsss
 {
@@ -79,6 +82,13 @@ namespace ClassLibrary_OPLabsss
             this.image = image;
         }
 
+        public Airplane(string boardNumber, string modelNumber, DateTime lastMaintenanceDate)
+        {
+            this.BoardNumber = boardNumber;
+            this.ModelNumber = modelNumber;
+            this.LastMaintenanceDate = lastMaintenanceDate;
+        }
+
         static Airplane()
         {
             Airplane.bgColor = Color.Azure;
@@ -95,6 +105,61 @@ namespace ClassLibrary_OPLabsss
         {
             Graphics g = Graphics.FromHwnd(form.Handle);
             g.DrawImage(System.Drawing.Image.FromFile(this.image), new Rectangle(0, 0, form.Width, form.Height));
+        }
+
+        public void WhriteInfo(SaveFileDialog dlg)
+        {
+            string path;
+
+            path = dlg.FileName;
+            StreamWriter streamWriter = new StreamWriter(path);
+            streamWriter.WriteLine("Бортовой номер - " + this.BoardNumber);
+            streamWriter.WriteLine("Номер модели - " + this.ModelNumber);
+            streamWriter.WriteLine("Дата последнего ТО - " + this.LastMaintenanceDate.ToShortDateString());
+            streamWriter.Close();
+        }
+
+        public string ReadInfo(OpenFileDialog dlg)
+        {
+            string path;
+            string str = null;
+
+            path = dlg.FileName;
+            StreamReader streamReader = new StreamReader(path);
+            str = streamReader.ReadToEnd();
+            streamReader.Close();
+
+            return str;
+        }
+
+        public int AfterMaintenanceYears()
+        {
+            int years = 0;
+
+            years = DateTime.Today.Year - LastMaintenanceDate.Year;
+
+            return years;
+        }
+
+        public void AverageMaintananceYears(ref string str, in List<Airplane> airplanes, out int avg, out int count)
+        {
+            int years = 0;
+            count = 0;
+            
+            foreach (Airplane airplane in airplanes)
+            {
+                years += DateTime.Today.Year - airplane.LastMaintenanceDate.Year;
+                count ++;
+            }
+
+            avg = years / count;
+
+            str = "Измененная строка";
+        }
+
+        public void Type(RichTextBox box, string optional = "Константа - Самолет")
+        {
+            box.Text += string.Format("\nМетод с необязательным параметром:\n{0}", optional);
         }
     }
 }
