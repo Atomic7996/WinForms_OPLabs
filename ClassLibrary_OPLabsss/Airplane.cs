@@ -89,6 +89,14 @@ namespace ClassLibrary_OPLabsss
             this.LastMaintenanceDate = lastMaintenanceDate;
         }
 
+        public Airplane(string boardNumber, string modelNumber, bool isForPassengers, DateTime lastMaintenanceDate)
+        {
+            this.BoardNumber = boardNumber;
+            this.ModelNumber = modelNumber;
+            this.IsForPassengers = isForPassengers;
+            this.LastMaintenanceDate = lastMaintenanceDate;
+        }
+
         static Airplane()
         {
             Airplane.bgColor = Color.Azure;

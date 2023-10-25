@@ -19,37 +19,44 @@ namespace WinForms_OPLabs
 
         private void LR1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLR1 lr1 = new FormLR1();
-            lr1.MdiParent = this;
-            lr1.Show();
+            FormLR1 lr = new FormLR1();
+            lr.MdiParent = this;
+            lr.Show();
         }
 
         private void LR2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLR2 lr2 = new FormLR2();
-            lr2.MdiParent = this;
-            lr2.Show();
+            FormLR2 lr = new FormLR2();
+            lr.MdiParent = this;
+            lr.Show();
         }
 
         private void LR3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLR3 lr3 = new FormLR3();
-            lr3.MdiParent = this;
-            lr3.Show();
+            FormLR3 lr = new FormLR3();
+            lr.MdiParent = this;
+            lr.Show();
         }
 
         private void LR4ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLR4 lr4 = new FormLR4();
-            lr4.MdiParent = this;
-            lr4.Show();
+            FormLR4 lr = new FormLR4();
+            lr.MdiParent = this;
+            lr.Show();
         }
 
         private void LR5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLR5 lr5 = new FormLR5();
-            lr5.MdiParent = this;
-            lr5.Show();
+            FormLR5 lr = new FormLR5();
+            lr.MdiParent = this;
+            lr.Show();
+        }
+
+        private void LR6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLR6 lr = new FormLR6();
+            lr.MdiParent = this;
+            lr.Show();
         }
     }
 }

@@ -182,7 +182,7 @@
             Controls.Add(tbModel);
             Controls.Add(label1);
             Name = "FormLR5";
-            Text = "FormLR5";
+            Text = "Лабораторная работа 5";
             WindowState = FormWindowState.Maximized;
             Load += FormLR5_Load;
             ResumeLayout(false);
