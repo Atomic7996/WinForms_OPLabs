@@ -21,7 +21,7 @@ namespace ClassLibrary_OPLabsss
         private string airplaneName;
         private int engineCount;
         private DateTime lastMaintenanceDate;
-        private string image;
+        public string image;
 
         // Свойства
         public bool IsForPassengers { get; set; }
@@ -53,7 +53,7 @@ namespace ClassLibrary_OPLabsss
             }
         }
 
-        public DateTime LastMaintenanceDate { get => lastMaintenanceDate; set => lastMaintenanceDate = value; }
+        public virtual DateTime LastMaintenanceDate { get => lastMaintenanceDate; set => lastMaintenanceDate = value; }
 
         public string BoardNumber { get => boardNumber; set => boardNumber = value; }
         public string ModelNumber { get => modelNumber; set => modelNumber = value; }
@@ -115,7 +115,7 @@ namespace ClassLibrary_OPLabsss
             g.DrawImage(System.Drawing.Image.FromFile(this.image), new Rectangle(0, 0, form.Width, form.Height));
         }
 
-        public void WhriteInfo(SaveFileDialog dlg)
+        public virtual void WhriteInfo(SaveFileDialog dlg)
         {
             string path;
 
@@ -140,7 +140,7 @@ namespace ClassLibrary_OPLabsss
             return str;
         }
 
-        public int AfterMaintenanceYears()
+        public virtual int AfterMaintenanceYears()
         {
             int years = 0;
 
