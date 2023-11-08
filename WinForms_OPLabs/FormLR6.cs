@@ -29,16 +29,16 @@ namespace WinForms_OPLabs
         {
             if (cbForPassengers.Checked == true)
             {
-                PassengerAirplane passengerAirplane = new PassengerAirplane(tbBoardNumber.Text, tbModel.Text, cbForPassengers.Checked, dtpLastMaintenanceDate.Value, (int)nudPassengers.Value);
+                PassangersAirplane passengerAirplane = new PassangersAirplane(tbBoardNumber.Text, tbModel.Text, cbForPassengers.Checked, dtpLastMaintenanceDate.Value, (int)nudPassengers.Value);
                 rtbInfo.Text += string.Format("Самолет: бортовой номер: {0}, модель: {1}, для пассажиров - {2}, дата последнего ТО - {3}, кол-во пассажиров - {4} \n\n", passengerAirplane.boardNumber, passengerAirplane.modelNumber, passengerAirplane.IsForPassengers, passengerAirplane.LastMaintenanceDate.ToString("d"), passengerAirplane.PassengersAmount);
 
                 Airplane airplane = (Airplane)passengerAirplane;
                 //airplane.PassengersAmount = 0; // У класса Airplane отсутствует свойство PassengersAmount, которое описано в классе-наследнике PassengerAirplane, и оно является недоступным
                 // это вызывает ошибку в Visual Studio
 
-                Airplane airplane1 = new PassengerAirplane();
-                PassengerAirplane passengerAirplane1 = (PassengerAirplane)airplane1;
-                passengerAirplane1.PassengersAmount = 0; // А при нисходящем преобразовании свойство становится доступным
+                Airplane airplane1 = new Airplane();
+                Airplane passengerAirplane1 = (Airplane)airplane1;
+                //passengerAirplane1.PassangersAmount = 0; // А при нисходящем преобразовании свойство становится доступным
 
                 passengerAirplane1.GetHashCode(); // Этот метод унаследован от класса Object
             }

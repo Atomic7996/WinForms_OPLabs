@@ -20,9 +20,9 @@ namespace WinForms_OPLabs
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            PassengerAirplane passengerAirplane = new PassengerAirplane(tbBoardNumber.Text, tbModel.Text, true, dtpLastMaintenanceDate.Value, (int)nudPassengers.Value);
+            PassangersAirplane passengerAirplane = new PassangersAirplane(tbBoardNumber.Text, tbModel.Text, true, dtpLastMaintenanceDate.Value, (int)nudPassengers.Value);
             rtbInfo.Text += string.Format("Самолет: бортовой номер: {0}, модель: {1}, для пассажиров - {2}, дата последнего ТО - {3}, кол-во пассажиров - {4} \n\n", passengerAirplane.BoardNumber, passengerAirplane.ModelNumber, passengerAirplane.IsForPassengers, passengerAirplane.LastMaintenanceDate.ToString("d"), passengerAirplane.PassengersAmount);
-            rtbInfo.Text += string.Format("Домашний аэропорт - {0}\n\n", PassengerAirplane.airportName);
+            rtbInfo.Text += string.Format("Домашний аэропорт - {0}\n\n", Airplane.airportName);
 
             passengerAirplane.AfterMaintenanceYears();
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary_OPLabsss
 {
-    public sealed class PrivatePassengerAirplane: PassengerAirplane
+    public sealed class PrivatePassengerAirplane: PassangersAirplane
     {
         // Поля
         private string owner;

@@ -24,5 +24,11 @@ namespace ClassLibrary_OPLabsss
             this.LoadCapacity = loadCapacity;
             this.License = license;
         }
+
+        // Методы
+        public override string ToString()
+        {
+            return string.Format("Грузовой самолет: бортовой номер: {0}, модель: {1}, название - {2}, дата последнего ТО - {3}, грузоподъесность - {4} \n\n", this.BoardNumber, this.ModelNumber, this.AirplaneName, this.LastMaintenanceDate.ToString("d"), this.loadCapacity);
+        }
     }
 }
