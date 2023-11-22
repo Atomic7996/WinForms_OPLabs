@@ -38,6 +38,7 @@
             LR6ToolStripMenuItem = new ToolStripMenuItem();
             LR7ToolStripMenuItem = new ToolStripMenuItem();
             LR8ToolStripMenuItem = new ToolStripMenuItem();
+            LR9ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             // 
             // LRToolStripMenuItem
             // 
-            LRToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { LR1ToolStripMenuItem, LR2ToolStripMenuItem, LR3ToolStripMenuItem, LR4ToolStripMenuItem, LR5ToolStripMenuItem, LR6ToolStripMenuItem, LR7ToolStripMenuItem, LR8ToolStripMenuItem });
+            LRToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { LR1ToolStripMenuItem, LR2ToolStripMenuItem, LR3ToolStripMenuItem, LR4ToolStripMenuItem, LR5ToolStripMenuItem, LR6ToolStripMenuItem, LR7ToolStripMenuItem, LR8ToolStripMenuItem, LR9ToolStripMenuItem });
             LRToolStripMenuItem.Name = "LRToolStripMenuItem";
             LRToolStripMenuItem.Size = new Size(145, 20);
             LRToolStripMenuItem.Text = "Лабораторные работы";
@@ -113,6 +114,13 @@
             LR8ToolStripMenuItem.Text = "Лабораторная работа 8";
             LR8ToolStripMenuItem.Click += LR8ToolStripMenuItem_Click;
             // 
+            // LR9ToolStripMenuItem
+            // 
+            LR9ToolStripMenuItem.Name = "LR9ToolStripMenuItem";
+            LR9ToolStripMenuItem.Size = new Size(203, 22);
+            LR9ToolStripMenuItem.Text = "Лабораторная работа 9";
+            LR9ToolStripMenuItem.Click += LR9ToolStripMenuItem_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,5 +150,6 @@
         private ToolStripMenuItem LR6ToolStripMenuItem;
         private ToolStripMenuItem LR7ToolStripMenuItem;
         private ToolStripMenuItem LR8ToolStripMenuItem;
+        private ToolStripMenuItem LR9ToolStripMenuItem;
     }
 }

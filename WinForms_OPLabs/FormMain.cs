@@ -72,5 +72,12 @@ namespace WinForms_OPLabs
             lr.MdiParent = this;
             lr.Show();
         }
+
+        private void LR9ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLR9 lr = new FormLR9();
+            lr.MdiParent = this;
+            lr.Show();
+        }
     }
 }

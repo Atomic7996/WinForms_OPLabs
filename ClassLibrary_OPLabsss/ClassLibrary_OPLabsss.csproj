@@ -49,6 +49,7 @@
     <Compile Include="PassangersAirplane.cs" />
     <Compile Include="Pilot.cs" />
     <Compile Include="PrivatePassengerAirplane.cs" />
+    <Compile Include="PrivateVIPAirplane.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
