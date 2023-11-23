@@ -7,7 +7,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace ClassLibrary_OPLabsss
 {
-    public class Airplane : AbstractAirplane
+    public class Airplane : AbstractAirplane, IPetrolAirplane
     {
         // Поля
         private string airplaneId;
@@ -15,6 +15,7 @@ namespace ClassLibrary_OPLabsss
         public string modelNumber;
         public bool isForPassengers;
         public const string airportName = "Pulkovo SPB";
+        private decimal fuelAmount;
 
         public static readonly Color bgColor;
 
@@ -76,6 +77,8 @@ namespace ClassLibrary_OPLabsss
             }
         }
 
+        public decimal FuelAmount { get; set; }
+
         // Конструкторы
         public Airplane() { }
 
@@ -125,6 +128,13 @@ namespace ClassLibrary_OPLabsss
             this.AirplaneName = airplaneName;
             this.LastMaintenanceDate = lastMaintenanceDate;
             this.AirplaneId = airplaneId;
+        }
+
+        public Airplane(string boardNumber, string modelNumber, decimal fuelAmount)
+        {
+            this.BoardNumber = boardNumber;
+            this.ModelNumber = modelNumber;
+            this.FuelAmount = fuelAmount;
         }
 
         // Методы
@@ -209,6 +219,31 @@ namespace ClassLibrary_OPLabsss
         public override string ToString()
         {
             return string.Format("Самолет: бортовой номер: {0}, модель: {1}, название - {2}, дата последнего ТО - {3} \n\n", this.BoardNumber, this.ModelNumber, this.AirplaneName, this.LastMaintenanceDate.ToString("d"));
+        }
+
+        public void AddFuel(decimal fuelAmount)
+        {
+            if (this.FuelAmount + fuelAmount <= 90)
+            {
+                this.FuelAmount += fuelAmount;
+            }
+            else
+            {
+                MessageBox.Show("Полный бак!");
+            }
+        }
+
+        public void AddFuelFrom(IPetrolAirplane petrolAirplane, decimal fuelAmount)
+        {
+            if (this.FuelAmount + fuelAmount <= 90)
+            {
+                this.FuelAmount += fuelAmount;
+                petrolAirplane.AddFuel(fuelAmount);
+            }
+            else
+            {
+                MessageBox.Show("Полный бак!");
+            }            
         }
     }
 }

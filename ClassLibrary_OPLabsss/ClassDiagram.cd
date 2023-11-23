@@ -1,50 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ClassLibrary_OPLabsss.Airplane" Collapsed="true">
-    <Position X="5.25" Y="3.25" Width="1.5" />
+    <Position X="6.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>SAAAAEgIAAJAAAAEQAAAAIAAmACECIEAQQgBAAEAwAA=</HashCode>
+      <HashCode>SAAAAEgIAAJAAAAEQAQAAIAAmACECIEAQQgBAAEAwAA=</HashCode>
       <FileName>Airplane.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="System.Object" Collapsed="true">
-    <Position X="5.25" Y="1.25" Width="1.5" />
+    <Position X="3.25" Y="1.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="ClassLibrary_OPLabsss.CargoAirplane" Collapsed="true">
-    <Position X="6.5" Y="4.5" Width="1.5" />
+    <Position X="7.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAQAAAAEAAAAAAAAAAAAIAAAACAA=</HashCode>
       <FileName>CargoAirplane.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLibrary_OPLabsss.PrivatePassengerAirplane" Collapsed="true">
-    <Position X="4" Y="5.75" Width="1.5" />
+    <Position X="5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAEACAA=</HashCode>
       <FileName>PrivatePassengerAirplane.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLibrary_OPLabsss.AbstractAirplane" Collapsed="true">
-    <Position X="5.25" Y="2.25" Width="1.5" />
+    <Position X="6.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractAirplane.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLibrary_OPLabsss.PassangersAirplane" Collapsed="true">
-    <Position X="4" Y="4.5" Width="1.5" />
+    <Position X="5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>PassangersAirplane.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ClassLibrary_OPLabsss.PrivateVIPAirplane">
-    <Position X="4.75" Y="7" Width="1.5" />
+  <Class Name="ClassLibrary_OPLabsss.PrivateVIPAirplane" Collapsed="true">
+    <Position X="5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>PrivateVIPAirplane.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ClassLibrary_OPLabsss.PetrolStation">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PetrolStation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ClassLibrary_OPLabsss.IPetrolAirplane">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPetrolAirplane.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

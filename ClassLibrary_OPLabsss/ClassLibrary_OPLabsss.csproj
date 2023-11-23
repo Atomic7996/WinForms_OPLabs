@@ -46,7 +46,9 @@
     <Compile Include="AbstractAirplane.cs" />
     <Compile Include="Airplane.cs" />
     <Compile Include="CargoAirplane.cs" />
+    <Compile Include="IPetrolAirplane.cs" />
     <Compile Include="PassangersAirplane.cs" />
+    <Compile Include="PetrolStation.cs" />
     <Compile Include="Pilot.cs" />
     <Compile Include="PrivatePassengerAirplane.cs" />
     <Compile Include="PrivateVIPAirplane.cs" />
