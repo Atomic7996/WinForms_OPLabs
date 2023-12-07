@@ -45,7 +45,10 @@
   <ItemGroup>
     <Compile Include="AbstractAirplane.cs" />
     <Compile Include="Airplane.cs" />
+    <Compile Include="AirplanePilot.cs" />
+    <Compile Include="Airport.cs" />
     <Compile Include="CargoAirplane.cs" />
+    <Compile Include="Engine.cs" />
     <Compile Include="IPetrolAirplane.cs" />
     <Compile Include="PassangersAirplane.cs" />
     <Compile Include="PetrolStation.cs" />

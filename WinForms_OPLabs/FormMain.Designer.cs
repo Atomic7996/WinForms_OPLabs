@@ -40,6 +40,7 @@
             LR8ToolStripMenuItem = new ToolStripMenuItem();
             LR9ToolStripMenuItem = new ToolStripMenuItem();
             lR10ToolStripMenuItem = new ToolStripMenuItem();
+            lR11ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // 
             // LRToolStripMenuItem
             // 
-            LRToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { LR1ToolStripMenuItem, LR2ToolStripMenuItem, LR3ToolStripMenuItem, LR4ToolStripMenuItem, LR5ToolStripMenuItem, LR6ToolStripMenuItem, LR7ToolStripMenuItem, LR8ToolStripMenuItem, LR9ToolStripMenuItem, lR10ToolStripMenuItem });
+            LRToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { LR1ToolStripMenuItem, LR2ToolStripMenuItem, LR3ToolStripMenuItem, LR4ToolStripMenuItem, LR5ToolStripMenuItem, LR6ToolStripMenuItem, LR7ToolStripMenuItem, LR8ToolStripMenuItem, LR9ToolStripMenuItem, lR10ToolStripMenuItem, lR11ToolStripMenuItem });
             LRToolStripMenuItem.Name = "LRToolStripMenuItem";
             LRToolStripMenuItem.Size = new Size(145, 20);
             LRToolStripMenuItem.Text = "Лабораторные работы";
@@ -129,6 +130,13 @@
             lR10ToolStripMenuItem.Text = "Лабораторная работа 10";
             lR10ToolStripMenuItem.Click += lR10ToolStripMenuItem_Click;
             // 
+            // lR11ToolStripMenuItem
+            // 
+            lR11ToolStripMenuItem.Name = "lR11ToolStripMenuItem";
+            lR11ToolStripMenuItem.Size = new Size(209, 22);
+            lR11ToolStripMenuItem.Text = "Лабораторная работа 12";
+            lR11ToolStripMenuItem.Click += lR11ToolStripMenuItem_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -160,5 +168,6 @@
         private ToolStripMenuItem LR8ToolStripMenuItem;
         private ToolStripMenuItem LR9ToolStripMenuItem;
         private ToolStripMenuItem lR10ToolStripMenuItem;
+        private ToolStripMenuItem lR11ToolStripMenuItem;
     }
 }

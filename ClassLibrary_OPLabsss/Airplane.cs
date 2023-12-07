@@ -24,6 +24,9 @@ namespace ClassLibrary_OPLabsss
         private DateTime lastMaintenanceDate;
         public string image;
 
+        private Engine engine;
+        private AirplanePilot pilot;
+
         // Свойства
         public bool IsForPassengers { get; set; }
 
@@ -79,6 +82,10 @@ namespace ClassLibrary_OPLabsss
 
         public decimal FuelAmount { get; set; }
 
+        public Engine Engine { get; set; }
+
+        public AirplanePilot Pilot {  get; set; }
+
         // Конструкторы
         public Airplane() { }
 
@@ -86,6 +93,15 @@ namespace ClassLibrary_OPLabsss
         {
             this.BoardNumber = boardNumber;
             this.ModelNumber = modelNumber;
+            this.engine = new Engine();
+        }
+
+        public Airplane(string boardNumber, string modelNumber, AirplanePilot pilot)
+        {
+            this.BoardNumber = boardNumber;
+            this.ModelNumber = modelNumber;
+            this.engine = new Engine();
+            this.Pilot = pilot;
         }
 
         public Airplane(string boardNumber, string modelNumber, bool isForPassengers, string airplaneName, int engineCount, DateTime lastMaintenanceDate) : this(boardNumber, modelNumber)

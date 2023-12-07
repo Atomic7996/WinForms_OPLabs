@@ -15,7 +15,9 @@ namespace ClassLibrary_OPLabsss
         public decimal FuelAmount { get; set; }
         public string Title { get; set; }
 
+
         // Конструкторы
+        public PetrolStation() { }
         public PetrolStation(string title, decimal amount)
         {
             this.Title = title;
